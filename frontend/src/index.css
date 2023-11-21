@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.custom-login-bg {
+  background: url(./assets/images/login-bg.jpg);
+  background-position: center;
+  background-size: cover;  
+}
+
+.custom-slide-animation {
+  width: 100%;
+  transition: width 2s;
+}
+
+.custom-slide-animation.active {
+  width: 100%;
+  transition: width 2s;
+}
+

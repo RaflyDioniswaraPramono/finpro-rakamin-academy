@@ -5,7 +5,7 @@
     "database": "db_finpro_dev",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "port": "5433"
+    "port": 5433
   },
   "test": {
     "username": "postgres",
@@ -13,14 +13,14 @@
     "database": "db_finpro_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "port": "5433"
+    "port": 5433
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "username": "postgres",
+    "password": "admin",
     "database": "db_finpro_prod",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "port": "5433"
+    "port": 5433
   }
 }

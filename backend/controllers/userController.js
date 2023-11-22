@@ -4,7 +4,7 @@ const { decryptPassword } = require("../helpers/bcrypt");
 const { generateToken } = require("../helpers/jwt");
 
 class UsersController {
-    static async register(req, res) {
+  static async register(req, res) {
         try {
           const { email, password } = req.body;
           const existingUser = await tb_admins.findOne({
@@ -32,7 +32,7 @@ class UsersController {
           });
         }
     }
-
+  
   static async login(req, res) {
     try {
       const { email, password } = req.body;

@@ -1,8 +1,38 @@
 const { tb_admins } = require("../models");
-const { decryptPassword } = require("../helpers/bcrypt")
+const { encryptPassword } = require("../helpers/bcrypt");
+const { decryptPassword } = require("../helpers/bcrypt");
 const { generateToken } = require("../helpers/jwt");
 
 class UsersController {
+  static async register(req, res) {
+        try {
+          const { email, password } = req.body;
+          const existingUser = await tb_admins.findOne({
+            where: { email },
+          });
+    
+          if (existingUser) {
+            return res.status(409).json({
+              msg: "User already exists!",
+            });
+          }
+
+          const hashedPassword = encryptPassword(password);
+          const newUser = await tb_admins.create({
+            email,
+            password: hashedPassword,
+          });
+          const access_token = generateToken(newUser);
+    
+          res.status(201).json({ token: access_token });
+        } catch (error) {
+          console.log(error.message);
+          res.status(500).json({
+            msg: "Internal Server Error",
+          });
+        }
+    }
+  
   static async login(req, res) {
     try {
       const { email, password } = req.body;

@@ -1,4 +1,5 @@
 "use strict";
+
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class tb_admins extends Model {
@@ -6,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
+
   tb_admins.init(
     {
       email: DataTypes.STRING,

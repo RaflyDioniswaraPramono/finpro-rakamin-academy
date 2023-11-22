@@ -1,4 +1,6 @@
 const router = require("express").Router();
+
+const distributorReportRoutes = require("./distributorReportRoutes");
 const supplierReportRoutes = require("./supplierReportRoutes");
 
 router.get("/", (req, res) => {

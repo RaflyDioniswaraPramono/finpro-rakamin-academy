@@ -6,11 +6,15 @@ module.exports = (sequelize, DataTypes) => {
       tb_products.belongsTo(models.tb_categories, {
         foreignKey: "category_id",
       });
+      tb_products.belongsTo(models.tb_suppliers, {
+        foreignKey: "supplier_id"
+      })
     }
   }
   tb_products.init(
     {
       category_id: DataTypes.INTEGER,
+      supplier_id: DataTypes.INTEGER,
       product_name: DataTypes.STRING,
       product_price: DataTypes.STRING,
     },

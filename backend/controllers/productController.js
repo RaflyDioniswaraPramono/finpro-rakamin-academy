@@ -1,4 +1,4 @@
-const { tb_products, tb_categories } = require("../models");
+const { tb_products, tb_categories, tb_suppliers } = require("../models");
 
 class ProductsController {
   static async addProduct(req, res) {
@@ -23,7 +23,13 @@ class ProductsController {
   static async getProducts(req, res) {
     try {
       const payload = await tb_products.findAll({
-        include: [{ model: tb_categories, attributes: ["category_name"] }],
+        include: [
+          { model: tb_categories, attributes: ["category_name"] },
+          {
+            model: tb_suppliers,
+            attributes: ["supplier_name", "supplier_address"],
+          },
+        ],
         attributes: ["id", "product_name", "product_price"],
       });
 

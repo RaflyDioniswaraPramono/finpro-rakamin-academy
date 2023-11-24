@@ -6,14 +6,14 @@ class CategoryController {
       const { categoryName } = req.body;
 
       const payload = await tb_categories.create({
-       category_name:categoryName
+        category_name: categoryName,
       });
 
       res.status(201).json({
         status_code: "Created",
         datas: payload,
-        message: "Successfully add category"
-      })
+        message: "Successfully add category!",
+      });
     } catch (error) {
       console.log(error);
     }
@@ -69,8 +69,7 @@ class CategoryController {
 
   static async updateCategory(req, res) {
     try {
-      const { id, categoryName } =
-        req.body;
+      const { id, categoryName } = req.body;
 
       const findCategory = await tb_categories.findOne({
         where: {
@@ -81,7 +80,7 @@ class CategoryController {
       if (findCategory) {
         await tb_categories.update(
           {
-            category_name:categoryName
+            category_name: categoryName,
           },
           {
             where: {

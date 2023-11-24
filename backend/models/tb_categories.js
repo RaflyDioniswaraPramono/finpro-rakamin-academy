@@ -3,7 +3,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class tb_categories extends Model {
     static associate(models) {
-      // define association here
+      tb_categories.hasMany(models.tb_products);
     }
   }
   tb_categories.init(

@@ -1,4 +1,4 @@
-const { tb_products } = require("../models");
+const { tb_products, tb_categories } = require("../models");
 
 class ProductsController {
   static async addProduct(req, res) {
@@ -22,7 +22,10 @@ class ProductsController {
 
   static async getProducts(req, res) {
     try {
-      const payload = tb_products.findAll();
+      const payload = await tb_products.findAll({
+        include: [{ model: tb_categories, attributes: ["category_name"] }],
+        attributes: ["id", "product_name", "product_price"],
+      });
 
       if (payload.length > 0) {
         res.status(200).json({
@@ -55,7 +58,7 @@ class ProductsController {
         res.status(200).json({
           status_code: "OK",
           datas: payload,
-          messgae: `Get product by id ${id} successfully!`,
+          message: `Get product by id ${id} successfully!`,
         });
       } else {
         res.status(404).json({
@@ -82,7 +85,7 @@ class ProductsController {
         await tb_products.update(
           {
             product_name: productName,
-            product_price: productPrice
+            product_price: productPrice,
           },
           {
             where: {

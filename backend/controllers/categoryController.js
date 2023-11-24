@@ -21,7 +21,7 @@ class CategoryController {
 
   static async getCategories(req, res) {
     try {
-      const payload = tb_categories.findAll();
+      const payload = await tb_categories.findAll();
 
       if (payload.length > 0) {
         res.status(200).json({

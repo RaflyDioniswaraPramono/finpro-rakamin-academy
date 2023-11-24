@@ -1,7 +1,7 @@
 const router = require("express").Router();
-
 const productRoutes = require("./productRoutes");
 const categoryRoutes = require("./categoryRoutes");
+const supplierRoutes = require("./supplierRoutes");
 const distributorReportRoutes = require("./distributorReportRoutes");
 const supplierReportRoutes = require("./supplierReportRoutes");
 
@@ -19,6 +19,7 @@ router.get("/api/v1", (req, res) => {
 
 router.use("/api/v1", productRoutes);
 router.use("/api/v1", categoryRoutes);
+router.use("/api/v1", supplierRoutes);
 router.use("/api/v1", supplierReportRoutes);
 router.use("/api/v1", distributorReportRoutes);
 

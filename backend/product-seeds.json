@@ -1,211 +1,253 @@
 [
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Beras Cap Pisang",
     "product_price": 13000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Beras Cap Paus",
     "product_price": 14000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Surya 12",
     "product_price": 25500
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Surya 16",
     "product_price": 34000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Andalan Filter 12",
     "product_price": 14000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Andalan Filter 16",
     "product_price": 21000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Andalan Kretek 12",
     "product_price": 11000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Sampoerna Mild 16",
     "product_price": 32000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Sampoerna Mild 50",
     "product_price": 329000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok LA Lights 16",
     "product_price": 18000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok LA Ice 16",
     "product_price": 34000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok LA Mentol 16",
     "product_price": 32000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok 76 Kretek",
     "product_price": 14000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Talijagat Kretek",
     "product_price": 11000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Geo Mild 16",
     "product_price": 16000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 1,
     "product_name": "Rokok Geo Kretek",
     "product_price": 11000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Mama Lime Charcoal 800ml",
     "product_price": 12000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Mama Lime Green Tea 400ml",
     "product_price": 8000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Mama Lime Ekstrak Jeruk Nipis 780ml",
     "product_price": 14000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Mama Lime Anti Backteria 1.6 L",
     "product_price": 32000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Asepso",
     "product_price": 7500
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Dettol 60gr",
     "product_price": 4000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Dettol 100gr",
     "product_price": 7000
   },
-  {    
-    "category_id": 1,    
+  {
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Lifebuoy",
     "product_price": 4000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Lux",
     "product_price": 4000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun My Baby",
     "product_price": 3500
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Sabun Mandi Sinzhui",
     "product_price": 5500
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Sedaap Pouch 600ml",
     "product_price": 17000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Sedaap Spesial Refil 550ml",
     "product_price": 24000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Sedaap Pouch 225ml",
     "product_price": 10000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Sedaap Botol 135ml",
     "product_price": 10000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Sedap Botol 275ml",
     "product_price": 22000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Bango Pouch 520ml",
     "product_price": 34000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Bango Botol 275ml",
     "product_price": 26000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Bango Refil 550ml",
     "product_price": 26000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis ABC Refil 520ml",
     "product_price": 17000
   },
   {
-    "category_id": 2,    
+    "category_id": 2,
+    "supplier_id": 2,
     "product_name": "Kecap Manis Indofood 520ml",
     "product_price": 18000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Semen Tiga Roda 40kg",
     "product_price": 64000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Semen Padang PCC 40kg",
     "product_price": 56000
   },
   {
-    "category_id": 1,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Semen Gresik 40kg",
     "product_price": 52500
   },
   {
-    "category_id": 6,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Semen Putih Tiga Roda 40kg",
     "product_price": 112000
   },
   {
-    "category_id": 6,    
+    "category_id": 1,
+    "supplier_id": 2,
     "product_name": "Semen Asian Tiga Roda 40kg",
     "product_price": 109000
   }

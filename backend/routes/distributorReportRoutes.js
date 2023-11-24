@@ -5,6 +5,6 @@ router.post("/distributors/reports", DistributorReportController.addSupplierRepo
 router.get("/distributors/reports", DistributorReportController.getSupplierReports);
 router.get("/distributors/reports/:id", DistributorReportController.getSupplierReportById);
 router.put("/distributors/reports", DistributorReportController.updateSupplierReport);
-router.delete("/distributors/reports", DistributorReportController.deleteSupplierReport);
+router.delete("/distributors/reports/:id", DistributorReportController.deleteSupplierReport);
 
 module.exports = router;

@@ -2,7 +2,8 @@ const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const router = require("./routes")
+const router = require("./routes");
+
 
 const app = express();
 const PORT = process.env.DEV_PORT;

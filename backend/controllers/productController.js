@@ -31,6 +31,7 @@ class ProductsController {
           },
         ],
         attributes: ["id", "product_name", "product_price"],
+        order: [["id", "ASC"]]
       });
 
       if (payload.length > 0) {

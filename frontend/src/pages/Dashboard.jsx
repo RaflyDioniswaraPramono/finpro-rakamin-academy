@@ -13,17 +13,23 @@ import {
   SupplierManagement,
   SupplierReport,
 } from "../components/Contents";
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Dashboard = (props) => {
   Dashboard.propTypes = {
     isSideMenuOpen: PropTypes.any,
     contentId: PropTypes.number,
-  };
+  };  
 
-  const handleChangeContent = () => {
-    localStorage.setItem("lastViewedContent", props.contentId);
+  const navigate = useNavigate();
 
+  const cekToken = localStorage.getItem("access_token");  
+  if (!cekToken) {
+    return navigate("/login")
+  } 
+
+  const handleChangeContent = () => {    
     switch (props.contentId) {
       case 1:
         return <DashboardContent />;
@@ -46,7 +52,7 @@ const Dashboard = (props) => {
       default:
         return <DashboardContent />;
     }
-  };
+  };  
 
   return (
     <div className="grid grid-cols-4">

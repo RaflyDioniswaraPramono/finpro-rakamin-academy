@@ -1,6 +1,5 @@
 const { tb_admins } = require("../models");
-const { encryptPassword } = require("../helpers/bcrypt");
-const { decryptPassword } = require("../helpers/bcrypt");
+const { encryptPassword, decryptPassword } = require("../helpers/bcrypt");
 const { generateToken } = require("../helpers/jwt");
 
 class UsersController {
@@ -16,29 +15,26 @@ class UsersController {
           message: "User already exists!",
         });
       } else {
-        const hashedPassword = await encryptPassword(password);
+        const hashedPassword = encryptPassword(password);
 
         const admin = await tb_admins.create({
           email: email,
           phone_number: phoneNumber,
           nama: nama,
           profil: profil,
-          password: hashedPassword
-        })
+          password: hashedPassword,
+        });
 
         const access_token = generateToken(admin);
 
         res.status(201).json({
-          status_code: "Created",          
+          status_code: "Created",
           message: "Register successfully",
-          access_token: access_token
-        })
-      }      
+          access_token: access_token,
+        });
+      }
     } catch (error) {
       console.log(error.message);
-      res.status(500).json({
-        message: "Internal Server Error",
-      });
     }
   }
 
@@ -46,12 +42,17 @@ class UsersController {
     try {
       const { email, password } = req.body;
       const user = await tb_admins.findOne({
-        where: { email },
+        where: { email: email },
       });
+
       if (user) {
         if (decryptPassword(password, user.password)) {
           const access_token = generateToken(user);
-          res.status(200).json({ token: access_token });
+
+          res.status(200).json({
+            message: "Login successfully!",
+            access_token: { access_token: access_token },
+          });
         } else {
           res.status(409).json({
             message: "Incorrect password!",
@@ -59,7 +60,7 @@ class UsersController {
         }
       } else {
         res.status(404).json({
-          message: "User not found!",
+          message: `User with email ${email} cannot be found!`,
         });
       }
     } catch (error) {

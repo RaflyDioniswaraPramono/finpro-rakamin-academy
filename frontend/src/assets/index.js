@@ -17,6 +17,7 @@ import CrudIcon from "./icons/CrudIcon";
 import ReportIcon from "./icons/ReportIcon";
 import DocumentIcon from "./icons/DocumentIcon";
 import Crud2Icon from "./icons/Crud2Icon";
+import XMarkIcon from "./icons/XMarkIcon";
 
 export {
   loginBg,
@@ -37,5 +38,6 @@ export {
   CrudIcon,
   ReportIcon,
   DocumentIcon,
-  Crud2Icon
+  Crud2Icon,
+  XMarkIcon
 };

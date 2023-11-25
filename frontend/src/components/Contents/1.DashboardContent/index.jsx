@@ -1,6 +1,31 @@
+import { useEffect } from "react";
 import ContentHeader from "../ContentHeader";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const DashboardContent = () => {
+  const navigate = useNavigate();
+  const { access_token } = JSON.parse(localStorage.getItem("access_token"));    
+
+  useEffect(() => {
+    const fetchingData = async () => {
+      await axios
+        .get("http://localhost:3001/api/v1/products", {
+          headers: {
+            access_token: access_token
+          }
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error.response.data.message)
+          navigate("/login")
+        });
+    };
+    fetchingData();
+  }, []);
+
   return (
     <div>
       <ContentHeader

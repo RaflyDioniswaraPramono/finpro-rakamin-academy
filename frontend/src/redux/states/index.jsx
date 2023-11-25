@@ -1,7 +1,7 @@
 export const mapStateToProps = (state) => {
   return {
     isSideMenuOpen: state.side.isSideMenuOpen,
-    contentId: state.content.contentId,
+    contentId: state.content.contentId,    
   };
 };
 
@@ -18,6 +18,6 @@ export const mapDispatchToProps = (dispatch) => {
     openDistributorManagement: () =>
       dispatch({ type: "OPEN_DISTRIBUTOR_MANAGEMENT" }),
     openImportData: () => dispatch({ type: "OPEN_IMPORT_DATA" }),
-    openExportData: () => dispatch({ type: "OPEN_EXPORT_DATA" }),
+    openExportData: () => dispatch({ type: "OPEN_EXPORT_DATA" }),    
   };
 };

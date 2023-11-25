@@ -4,7 +4,7 @@ import contentReducer from "../reducers/contentReducer";
 
 const rootReducer = combineReducers({
   side: sideMenuReducer,
-  content: contentReducer,
+  content: contentReducer,  
 });
 
 export default rootReducer;

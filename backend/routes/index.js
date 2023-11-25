@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const adminRoutes = require("./adminRoutes");
 const productRoutes = require("./productRoutes");
 const categoryRoutes = require("./categoryRoutes");
 const supplierRoutes = require("./supplierRoutes");
@@ -17,6 +18,7 @@ router.get("/api/v1", (req, res) => {
   });
 });
 
+router.use("/api/v1", adminRoutes);
 router.use("/api/v1", productRoutes);
 router.use("/api/v1", categoryRoutes);
 router.use("/api/v1", supplierRoutes);

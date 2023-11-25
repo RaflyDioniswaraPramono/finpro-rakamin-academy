@@ -13,7 +13,10 @@ const generateToken = (users) => {
       phone_number: phone_number,
       password: password
     },
-    secretKey
+    secretKey,
+    {
+      expiresIn: "60s"
+    }
   );
 };
 

@@ -5,7 +5,7 @@ const encryptPassword = (password) => {
 }
 
 const decryptPassword = (password, userPassword) => {
-  return bcrypt.compare(password, userPassword);
+  return bcrypt.compareSync(password, userPassword);
 }
 
 module.exports = {
